@@ -1,1 +1,1727 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#0a0a0b"/><meta name="description" content="Sagar Gurav - AI & ML engineer and B.Tech student at NMIMS MPSTME. Builds GenAI agents, RAG products and FastAPI backends. Projects, experience and contact."/><meta name="google-site-verification" content="1pfI4NVtIvFObemWy652XKg_PmKCV-AJI1p33FEWhLM" /><meta name="robots" content="index,follow"/><link rel="canonical" href="https://sagargrv.vercel.app/"/><meta property="og:type" content="website"/><meta property="og:site_name" content="Sagar Gurav"/><meta property="og:title" content="Sagar Gurav - AI / ML Engineer"/><meta property="og:description" content="AI & ML engineer building GenAI agents, RAG products and FastAPI backends. Projects, experience and contact."/><meta property="og:url" content="https://sagargrv.vercel.app/"/><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Sagar Gurav - AI / ML Engineer"/><meta name="twitter:description" content="AI & ML engineer building GenAI agents, RAG products and FastAPI backends."/><script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Sagar Gurav","url":"https://sagargrv.vercel.app/","email":"mailto:sagargurav1812@gmail.com","jobTitle":"AI / ML Engineer","description":"AI & ML undergraduate at NMIMS MPSTME building GenAI agents, RAG products and FastAPI backends.","alumniOf":{"@type":"CollegeOrUniversity","name":"SVKM's NMIMS MPSTME"},"sameAs":["https://github.com/sagar-grv","https://www.linkedin.com/in/sagargrv"]}</script><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet"/><title>Sagar Gurav - AI / ML Engineer (GenAI, RAG, FastAPI)</title><script>window.addEventListener("error",function(e){e.error instanceof DOMException&&"DataCloneError"===e.error.name&&e.message&&e.message.includes("PerformanceServerTiming")&&(e.stopImmediatePropagation(),e.preventDefault())},!0)</script><script defer="defer" src="/static/js/main.5b13cca2.js"></script><link href="/static/css/main.54dd21e4.css" rel="stylesheet"><link href="/static/ai-bar.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script defer src="/static/ai-bar.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="theme-color" content="#0a0a0b"/>
+<meta name="description" content="Sagar Gurav - AI & ML engineer and B.Tech student at NMIMS MPSTME. Builds GenAI agents, RAG products and FastAPI backends. Projects, experience and contact."/>
+<meta name="google-site-verification" content="1pfI4NVtIvFObemWy652XKg_PmKCV-AJI1p33FEWhLM" />
+<meta name="robots" content="index,follow"/>
+<link rel="canonical" href="https://sagargrv.vercel.app/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="Sagar Gurav"/>
+<meta property="og:title" content="Sagar Gurav - AI / ML Engineer"/>
+<meta property="og:description" content="AI & ML engineer building GenAI agents, RAG products and FastAPI backends. Projects, experience and contact."/>
+<meta property="og:url" content="https://sagargrv.vercel.app/"/>
+<meta property="og:image" content="https://sagargrv.vercel.app/og-image.jpg"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://sagargrv.vercel.app/og-image.jpg"/>
+<meta name="twitter:title" content="Sagar Gurav - AI / ML Engineer"/>
+<meta name="twitter:description" content="AI & ML engineer building GenAI agents, RAG products and FastAPI backends."/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Sagar Gurav","url":"https://sagargrv.vercel.app/","email":"mailto:sagargurav1812@gmail.com","jobTitle":"AI / ML Engineer","description":"AI & ML undergraduate at NMIMS MPSTME building GenAI agents, RAG products and FastAPI backends.","alumniOf":{"@type":"CollegeOrUniversity","name":"SVKM's NMIMS MPSTME"},"sameAs":["https://github.com/sagar-grv","https://www.linkedin.com/in/sagargrv"]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<title>Sagar Gurav - AI / ML Engineer (GenAI, RAG, FastAPI)</title>
+<script>window.addEventListener("error",function(e){e.error instanceof DOMException&&"DataCloneError"===e.error.name&&e.message&&e.message.includes("PerformanceServerTiming")&&(e.stopImmediatePropagation(),e.preventDefault())},!0)</script>
+<script defer="defer" src="/static/js/main.5b13cca2.js">
+</script>
+<link href="/static/css/main.54dd21e4.css" rel="stylesheet">
+<link href="/static/ai-bar.css" rel="stylesheet">
+</head>
+<body>
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<div id="root">
+<div class="App">
+<div class="relative min-h-screen bg-[var(--bg)] text-[var(--text)]">
+<header class="fixed top-0 inset-x-0 z-50 transition-all duration-300 bg-transparent">
+<div class="container-x flex items-center justify-between py-4">
+<a href="#top" class="flex items-center gap-2 group">
+<span class="inline-flex items-center justify-center w-8 h-8 rounded-md bg-[var(--accent)] text-[#0a0a0b] font-bold font-mono text-sm">SG</span>
+<span class="font-display font-medium text-[var(--text)]">Sagar Gurav<span class="text-[var(--text-dim)] font-mono text-xs ml-2">/sagar-grv</span>
+</span>
+</a>
+<nav class="hidden md:flex items-center gap-8">
+<a href="#about" class="text-sm text-[var(--text-muted)] hover:text-[var(--text)] transition-colors link-underline">About</a>
+<a href="#skills" class="text-sm text-[var(--text-muted)] hover:text-[var(--text)] transition-colors link-underline">Skills</a>
+<a href="#projects" class="text-sm text-[var(--text-muted)] hover:text-[var(--text)] transition-colors link-underline">Work</a>
+<a href="#experience" class="text-sm text-[var(--text-muted)] hover:text-[var(--text)] transition-colors link-underline">Experience</a>
+<a href="#contact" class="text-sm text-[var(--text-muted)] hover:text-[var(--text)] transition-colors link-underline">Contact</a>
+</nav>
+<div class="hidden md:flex items-center gap-3">
+<a href="https://github.com/sagar-grv" target="_blank" rel="noreferrer" aria-label="GitHub" class="p-2 rounded-md text-[var(--text-muted)] hover:text-[var(--accent)] hover:bg-white/5 transition">
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github" aria-hidden="true">
+<path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+</path>
+<path d="M9 18c-4.51 2-5-2-7-2">
+</path>
+</svg>
+</a>
+<a href="https://www.linkedin.com/in/sagargrv/" target="_blank" rel="noreferrer" aria-label="LinkedIn" class="p-2 rounded-md text-[var(--text-muted)] hover:text-[var(--accent)] hover:bg-white/5 transition">
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin" aria-hidden="true">
+<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+</path>
+<rect width="4" height="12" x="2" y="9">
+</rect>
+<circle cx="4" cy="4" r="2">
+</circle>
+</svg>
+</a>
+<a href="#contact" class="btn-primary text-sm py-2">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail" aria-hidden="true">
+<path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7">
+</path>
+<rect x="2" y="4" width="20" height="16" rx="2">
+</rect>
+</svg>Let's talk</a>
+</div>
+<button class="md:hidden p-2 text-[var(--text)]" aria-label="Toggle menu">
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu" aria-hidden="true">
+<path d="M4 12h16">
+</path>
+<path d="M4 18h16">
+</path>
+<path d="M4 6h16">
+</path>
+</svg>
+</button>
+</div>
+</header>
+<main>
+<section id="top" class="relative overflow-hidden pt-36 pb-20 md:pt-44 md:pb-28 spotlight noise">
+<div class="absolute inset-0">
+<canvas aria-hidden="true" class="absolute inset-0 w-full h-full pointer-events-none " width="1270" height="924">
+</canvas>
+</div>
+<div class="absolute inset-0 grid-bg opacity-40 pointer-events-none">
+</div>
+<div class="absolute -top-32 -right-32 w-[520px] h-[520px] rounded-full bg-[var(--accent-soft)] blur-3xl pointer-events-none">
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-[var(--bg)] to-transparent pointer-events-none">
+</div>
+<div class="container-x relative">
+<div class="grid lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 fade-up">
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-[var(--border)] bg-[var(--bg-elev)]/70 backdrop-blur text-xs font-mono text-[var(--text-muted)]">
+<span class="relative flex w-2 h-2">
+<span class="absolute inline-flex w-full h-full rounded-full bg-[var(--accent)] opacity-60 animate-ping">
+</span>
+<span class="relative inline-flex w-2 h-2 rounded-full bg-[var(--accent)]">
+</span>
+</span>Open to internships &amp; collaborations</div>
+<h1 class="font-display font-semibold mt-6 text-[clamp(2.5rem,6vw,4.75rem)] leading-[1.02] tracking-[-0.02em]">Hi, I'm <span class="relative inline-block">
+<span class="text-[var(--accent)]">Sagar</span>
+<span class="absolute -right-3 top-0 text-[var(--accent)] caret-bar">
+</span>
+</span>.<br>
+<span class="text-[var(--text-muted)]">I build </span>
+<span class="text-[var(--text)]">AI that ships.</span>
+</h1>
+<p class="mt-6 max-w-xl text-[var(--text-muted)] text-base md:text-lg leading-relaxed">AI &amp; ML undergraduate at NMIMS MPSTME who ships: GenAI agents, RAG products and FastAPI backends - from a voice-first UPI dispute agent to a Springer-published optimization chapter.</p>
+<div class="mt-8 flex flex-wrap items-center gap-3">
+<a href="#projects" class="btn-primary">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles" aria-hidden="true">
+<path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z">
+</path>
+<path d="M20 3v4">
+</path>
+<path d="M22 5h-4">
+</path>
+<path d="M4 17v2">
+</path>
+<path d="M5 18H3">
+</path>
+</svg> View my work</a>
+<a href="#contact" class="btn-ghost">Get in touch<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-down rotate-[-90deg]" aria-hidden="true">
+<path d="M12 5v14">
+</path>
+<path d="m19 12-7 7-7-7">
+</path>
+</svg>
+</a>
+<span class="hidden md:inline-flex items-center gap-1.5 ml-2 text-xs font-mono text-[var(--text-dim)]">
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap text-[var(--accent)]" aria-hidden="true" style="transform: rotate(45deg);">
+<path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z">
+</path>
+</svg>Ask my AI anything<span class="ml-1">↓</span>
+</span>
+</div>
+<div class="mt-10 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-[var(--text-muted)]">
+<span class="inline-flex items-center gap-2">
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin text-[var(--accent)]" aria-hidden="true">
+<path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+</path>
+<circle cx="12" cy="10" r="3">
+</circle>
+</svg> India</span>
+<span class="hidden md:inline w-px h-4 bg-[var(--border-strong)]">
+</span>
+<a href="https://github.com/sagar-grv" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 hover:text-[var(--accent)] transition">
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github" aria-hidden="true">
+<path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+</path>
+<path d="M9 18c-4.51 2-5-2-7-2">
+</path>
+</svg> github.com/sagar-grv</a>
+<span class="hidden md:inline w-px h-4 bg-[var(--border-strong)]">
+</span>
+<a href="https://www.linkedin.com/in/sagargrv/" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 hover:text-[var(--accent)] transition">
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin" aria-hidden="true">
+<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+</path>
+<rect width="4" height="12" x="2" y="9">
+</rect>
+<circle cx="4" cy="4" r="2">
+</circle>
+</svg> LinkedIn</a>
+</div>
+<div class="mt-10 max-w-xl">
+<div class="relative overflow-hidden rounded-xl border border-[var(--border)] bg-[var(--bg-elev)]/70 backdrop-blur px-4 py-3 font-mono text-[11px]">
+<div class="absolute top-0 left-0 h-full w-1 bg-gradient-to-b from-[var(--accent)] via-transparent to-[var(--accent)] opacity-60">
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-2">
+<div class="flex items-center gap-2">
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-brain text-[var(--accent)]" aria-hidden="true">
+<path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z">
+</path>
+<path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z">
+</path>
+<path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4">
+</path>
+<path d="M17.599 6.5a3 3 0 0 0 .399-1.375">
+</path>
+<path d="M6.003 5.125A3 3 0 0 0 6.401 6.5">
+</path>
+<path d="M3.477 10.896a4 4 0 0 1 .585-.396">
+</path>
+<path d="M19.938 10.5a4 4 0 0 1 .585.396">
+</path>
+<path d="M6 18a4 4 0 0 1-1.967-.516">
+</path>
+<path d="M19.967 17.484A4 4 0 0 1 18 18">
+</path>
+</svg>
+<span class="text-[var(--text-dim)] uppercase tracking-wider">repos</span>
+<span class="ml-auto text-[var(--text)] tabular-nums">6+</span>
+</div>
+<div class="flex items-center gap-2">
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cpu text-[var(--accent)]" aria-hidden="true">
+<path d="M12 20v2">
+</path>
+<path d="M12 2v2">
+</path>
+<path d="M17 20v2">
+</path>
+<path d="M17 2v2">
+</path>
+<path d="M2 12h2">
+</path>
+<path d="M2 17h2">
+</path>
+<path d="M2 7h2">
+</path>
+<path d="M20 12h2">
+</path>
+<path d="M20 17h2">
+</path>
+<path d="M20 7h2">
+</path>
+<path d="M7 20v2">
+</path>
+<path d="M7 2v2">
+</path>
+<rect x="4" y="4" width="16" height="16" rx="2">
+</rect>
+<rect x="8" y="8" width="8" height="8" rx="1">
+</rect>
+</svg>
+<span class="text-[var(--text-dim)] uppercase tracking-wider">focus</span>
+<span class="ml-auto text-[var(--text)] tabular-nums">genai</span>
+</div>
+<div class="flex items-center gap-2">
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-activity text-[var(--accent)]" aria-hidden="true">
+<path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2">
+</path>
+</svg>
+<span class="text-[var(--text-dim)] uppercase tracking-wider">book chapter</span>
+<span class="ml-auto text-[var(--text)] tabular-nums">1</span>
+</div>
+<div class="flex items-center gap-2">
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-git-branch text-[var(--accent)]" aria-hidden="true">
+<line x1="6" x2="6" y1="3" y2="15">
+</line>
+<circle cx="18" cy="6" r="3">
+</circle>
+<circle cx="6" cy="18" r="3">
+</circle>
+<path d="M18 9a9 9 0 0 1-9 9">
+</path>
+</svg>
+<span class="text-[var(--text-dim)] uppercase tracking-wider">branch</span>
+<span class="ml-auto text-[var(--text)] tabular-nums">main</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 fade-up" style="animation-delay: 120ms;">
+<div class="card overflow-hidden shadow-[0_10px_60px_-20px_rgba(0,0,0,0.6)] relative">
+<div class="flex items-center justify-between px-4 py-3 border-b border-[var(--border)] bg-[var(--bg-elev)]">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-[#ff5f56]">
+</span>
+<span class="w-2.5 h-2.5 rounded-full bg-[#ffbd2e]">
+</span>
+<span class="w-2.5 h-2.5 rounded-full bg-[#27c93f]">
+</span>
+</div>
+<div class="font-mono text-[11px] text-[var(--text-dim)]">~/sagar/about.py</div>
+<div class="w-10">
+</div>
+</div>
+<div class="p-5 font-mono text-[13px] leading-[1.85]">
+<div class="flex gap-4">
+<span class="text-[var(--text-dim)] select-none">01</span>
+<span class="text-[var(--text-dim)] italic"># whoami</span>
+</div>
+<div class="flex gap-4">
+<span class="text-[var(--text-dim)] select-none">02</span>
+<span class="text-[var(--text)]">
+<code>
+<span style="color:#f5f5f7">engineer</span> = <span style="color:#71717a">{</span>
+</code>
+</span>
+</div>
+<div class="flex gap-4">
+<span class="text-[var(--text-dim)] select-none">03</span>
+<span class="text-[var(--text)]">
+<code>  <span style="color:#a3e635">"name"</span>
+<span style="color:#71717a">:</span> <span style="color:#a3e635">"Sagar Gurav"</span>
+<span style="color:#71717a">,</span>
+</code>
+</span>
+</div>
+<div class="flex gap-4">
+<span class="text-[var(--text-dim)] select-none">04</span>
+<span class="text-[var(--text)]">
+<code>  <span style="color:#a3e635">"focus"</span>
+<span style="color:#71717a">:</span> <span style="color:#71717a">[</span>
+<span style="color:#a3e635">"GenAI"</span>
+<span style="color:#71717a">,</span> <span style="color:#a3e635">"RAG"</span>
+<span style="color:#71717a">,</span> <span style="color:#a3e635">"Backend"</span>
+<span style="color:#71717a">]</span>
+<span style="color:#71717a">,</span>
+</code>
+</span>
+</div>
+<div class="flex gap-4">
+<span class="text-[var(--text-dim)] select-none">05</span>
+<span class="text-[var(--text)]">
+<code>  <span style="color:#a3e635">"stack"</span>
+<span style="color:#71717a">:</span> <span style="color:#71717a">[</span>
+<span style="color:#a3e635">"Python"</span>
+<span style="color:#71717a">,</span> <span style="color:#a3e635">"FastAPI"</span>
+<span style="color:#71717a">,</span> <span style="color:#a3e635">"React"</span>
+<span style="color:#71717a">]</span>
+<span style="color:#71717a">,</span>
+</code>
+</span>
+</div>
+<div class="flex gap-4">
+<span class="text-[var(--text-dim)] select-none">06</span>
+<span class="text-[var(--text)]">
+<code>  <span style="color:#a3e635">"status"</span>
+<span style="color:#71717a">:</span> <span style="color:#a3e635">"building"</span>
+<span style="color:#71717a">,</span>
+</code>
+</span>
+</div>
+<div class="flex gap-4">
+<span class="text-[var(--text-dim)] select-none">07</span>
+<span class="text-[var(--text)]">
+<code>
+<span style="color:#71717a">}</span>
+</code>
+</span>
+</div>
+<div class="flex gap-4">
+<span class="text-[var(--text-dim)] select-none">08</span>
+<span class="text-[var(--text-dim)] italic"># run(engineer)  →  ships shippable AI<span class="caret">
+</span>
+</span>
+</div>
+</div>
+<div class="px-4 pb-4 flex flex-wrap gap-2 border-t border-[var(--border)] pt-3 bg-[var(--bg-elev)]/50">
+<span class="text-[10px] font-mono px-1.5 py-0.5 rounded border border-[var(--border)] text-[var(--text-dim)]">LangGraph</span>
+<span class="text-[10px] font-mono px-1.5 py-0.5 rounded border border-[var(--border)] text-[var(--text-dim)]">LangChain</span>
+<span class="text-[10px] font-mono px-1.5 py-0.5 rounded border border-[var(--border)] text-[var(--text-dim)]">RAG</span>
+<span class="text-[10px] font-mono px-1.5 py-0.5 rounded border border-[var(--border)] text-[var(--text-dim)]">Gemini</span>
+<span class="text-[10px] font-mono px-1.5 py-0.5 rounded border border-[var(--border)] text-[var(--text-dim)]">FastAPI</span>
+</div>
+</div>
+<p class="mt-4 text-xs font-mono text-[var(--text-dim)] text-center lg:text-right">
+<span class="text-[var(--accent)]">#</span> currently building: backend for College Circle AI</p>
+</div>
+</div>
+</div>
+</section>
+<div class="relative border-y border-[var(--border)] bg-gradient-to-r from-[var(--bg)] via-[var(--bg-elev)]/60 to-[var(--bg)] overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[var(--bg)] to-transparent z-10 pointer-events-none">
+</div>
+<div class="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[var(--bg)] to-transparent z-10 pointer-events-none">
+</div>
+<div class="py-4 flex gap-8 whitespace-nowrap marquee-track">
+<span class="font-mono text-xs text-[var(--text-dim)] uppercase tracking-widest inline-flex items-center gap-3">
+<span class="w-1 h-1 rounded-full bg-[var(--accent)]">
+</span>tensor</span>
+<span class="font-mono text-xs text-[var(--text-dim)] uppercase tracking-widest inline-flex items-center gap-3">
+<span class="w-1 h-1 rounded-full bg-[var(--accent)]">
+</span>gradient descent</span>
+<span class="font-mono text-xs text-[var(--text-dim)] uppercase tracking-widest inline-flex items-center gap-3">
+<span class="w-1 h-1 rounded-full bg-[var(--accent)]">
+</span>transformer</span>
+<span class="font-mono text-xs text-[var(--text-dim)] uppercase tracking-widest inline-flex items-center gap-3">
+<span class="w-1 h-1 rounded-full bg-[var(--accent)]">
+</span>attention</span>
+<span class="font-mono text-xs text-[var(--text-dim)] uppercase tracking-widest inline-flex items-center gap-3">
+<span class="w-1 h-1 rounded-full bg-[var(--accent)]">
+</span>embedding</span>
+<span class="font-mono text-xs text-[var(--text-dim)] uppercase tracking-widest inline-flex items-center gap-3">
+<span class="w-1 h-1 rounded-full bg-[var(--accent)]">
+</span>CNN</span>
+<span class="font-mono text-xs text-[var(--text-dim)] uppercase tracking-widest inline-flex items-center gap-3">
+<span class="w-1 h-1 rounded-full bg-[var(--accent)]">
+</span>YOLO</span>
+<span class="font-mono text-xs text-[var(--text-dim)] uppercase tracking-widest inline-flex items-center gap-3">
+<span class="w-1 h-1 rounded-full bg-[var(--accent)]">
+</span>diffusion</span>
+<span class="font-mono text-xs text-[var(--text-dim)] uppercase tracking-widest inline-flex items-center gap-3">
+<span class="w-1 h-1 rounded-full bg-[var(--accent)]">
+</span>RLHF</span>
+<span class="font-mono text-xs text-[var(--text-dim)] uppercase tracking-widest inline-flex items-center gap-3">
+<span class="w-1 h-1 rounded-full bg-[var(--accent)]">
+</span>LoRA</span>
+<span class="font-mono text-xs text-[var(--text-dim)] uppercase tracking-widest inline-flex items-center gap-3">
+<span class="w-1 h-1 rounded-full bg-[var(--accent)]">
+</span>RAG</span>
+<span class="font-mono text-xs text-[var(--text-dim)] uppercase tracking-widest inline-flex items-center gap-3">
+<span class="w-1 h-1 rounded-full bg-[var(--accent)]">
+</span>vector DB</span>
+<span class="font-mono text-xs text-[var(--text-dim)] uppercase tracking-widest inline-flex items-center gap-3">
+<span class="w-1 h-1 rounded-full bg-[var(--accent)]">
+</span>MLOps</span>
+<span class="font-mono text-xs text-[var(--text-dim)] uppercase tracking-widest inline-flex items-center gap-3">
+<span class="w-1 h-1 rounded-full bg-[var(--accent)]">
+</span>inference</span>
+<span class="font-mono text-xs text-[var(--text-dim)] uppercase tracking-widest inline-flex items-center gap-3">
+<span class="w-1 h-1 rounded-full bg-[var(--accent)]">
+</span>softmax</span>
+<span class="font-mono text-xs text-[var(--text-dim)] uppercase tracking-widest inline-flex items-center gap-3">
+<span class="w-1 h-1 rounded-full bg-[var(--accent)]">
+</span>cross-entropy</span>
+<span class="font-mono text-xs text-[var(--text-dim)] uppercase tracking-widest inline-flex items-center gap-3">
+<span class="w-1 h-1 rounded-full bg-[var(--accent)]">
+</span>tokenizer</span>
+<span class="font-mono text-xs text-[var(--text-dim)] uppercase tracking-widest inline-flex items-center gap-3">
+<span class="w-1 h-1 rounded-full bg-[var(--accent)]">
+</span>Gemini</span>
+<span class="font-mono text-xs text-[var(--text-dim)] uppercase tracking-widest inline-flex items-center gap-3">
+<span class="w-1 h-1 rounded-full bg-[var(--accent)]">
+</span>CUDA</span>
+<span class="font-mono text-xs text-[var(--text-dim)] uppercase tracking-widest inline-flex items-center gap-3">
+<span class="w-1 h-1 rounded-full bg-[var(--accent)]">
+</span>tensor</span>
+<span class="font-mono text-xs text-[var(--text-dim)] uppercase tracking-widest inline-flex items-center gap-3">
+<span class="w-1 h-1 rounded-full bg-[var(--accent)]">
+</span>gradient descent</span>
+<span class="font-mono text-xs text-[var(--text-dim)] uppercase tracking-widest inline-flex items-center gap-3">
+<span class="w-1 h-1 rounded-full bg-[var(--accent)]">
+</span>transformer</span>
+<span class="font-mono text-xs text-[var(--text-dim)] uppercase tracking-widest inline-flex items-center gap-3">
+<span class="w-1 h-1 rounded-full bg-[var(--accent)]">
+</span>attention</span>
+<span class="font-mono text-xs text-[var(--text-dim)] uppercase tracking-widest inline-flex items-center gap-3">
+<span class="w-1 h-1 rounded-full bg-[var(--accent)]">
+</span>embedding</span>
+<span class="font-mono text-xs text-[var(--text-dim)] uppercase tracking-widest inline-flex items-center gap-3">
+<span class="w-1 h-1 rounded-full bg-[var(--accent)]">
+</span>CNN</span>
+<span class="font-mono text-xs text-[var(--text-dim)] uppercase tracking-widest inline-flex items-center gap-3">
+<span class="w-1 h-1 rounded-full bg-[var(--accent)]">
+</span>YOLO</span>
+<span class="font-mono text-xs text-[var(--text-dim)] uppercase tracking-widest inline-flex items-center gap-3">
+<span class="w-1 h-1 rounded-full bg-[var(--accent)]">
+</span>diffusion</span>
+<span class="font-mono text-xs text-[var(--text-dim)] uppercase tracking-widest inline-flex items-center gap-3">
+<span class="w-1 h-1 rounded-full bg-[var(--accent)]">
+</span>RLHF</span>
+<span class="font-mono text-xs text-[var(--text-dim)] uppercase tracking-widest inline-flex items-center gap-3">
+<span class="w-1 h-1 rounded-full bg-[var(--accent)]">
+</span>LoRA</span>
+<span class="font-mono text-xs text-[var(--text-dim)] uppercase tracking-widest inline-flex items-center gap-3">
+<span class="w-1 h-1 rounded-full bg-[var(--accent)]">
+</span>RAG</span>
+<span class="font-mono text-xs text-[var(--text-dim)] uppercase tracking-widest inline-flex items-center gap-3">
+<span class="w-1 h-1 rounded-full bg-[var(--accent)]">
+</span>vector DB</span>
+<span class="font-mono text-xs text-[var(--text-dim)] uppercase tracking-widest inline-flex items-center gap-3">
+<span class="w-1 h-1 rounded-full bg-[var(--accent)]">
+</span>MLOps</span>
+<span class="font-mono text-xs text-[var(--text-dim)] uppercase tracking-widest inline-flex items-center gap-3">
+<span class="w-1 h-1 rounded-full bg-[var(--accent)]">
+</span>inference</span>
+<span class="font-mono text-xs text-[var(--text-dim)] uppercase tracking-widest inline-flex items-center gap-3">
+<span class="w-1 h-1 rounded-full bg-[var(--accent)]">
+</span>softmax</span>
+<span class="font-mono text-xs text-[var(--text-dim)] uppercase tracking-widest inline-flex items-center gap-3">
+<span class="w-1 h-1 rounded-full bg-[var(--accent)]">
+</span>cross-entropy</span>
+<span class="font-mono text-xs text-[var(--text-dim)] uppercase tracking-widest inline-flex items-center gap-3">
+<span class="w-1 h-1 rounded-full bg-[var(--accent)]">
+</span>tokenizer</span>
+<span class="font-mono text-xs text-[var(--text-dim)] uppercase tracking-widest inline-flex items-center gap-3">
+<span class="w-1 h-1 rounded-full bg-[var(--accent)]">
+</span>Gemini</span>
+<span class="font-mono text-xs text-[var(--text-dim)] uppercase tracking-widest inline-flex items-center gap-3">
+<span class="w-1 h-1 rounded-full bg-[var(--accent)]">
+</span>CUDA</span>
+</div>
+</div>
+<div class="" style="opacity: 0; transform: translateY(22px); transition: opacity 0.7s, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1); will-change: opacity, transform;">
+<section id="about" class="section">
+<div class="container-x">
+<div class="grid lg:grid-cols-12 gap-12">
+<div class="lg:col-span-5">
+<div class="section-eyebrow">
+<span class="w-6 h-px bg-[var(--accent)]">
+</span> 01 / About</div>
+<h2 class="section-title">An engineer who enjoys turning messy data into useful products.</h2>
+<div class="mt-8 card p-5 relative overflow-hidden">
+<div class="absolute inset-x-0 top-0 h-px shimmer">
+</div>
+<div class="flex items-center gap-2 text-xs font-mono text-[var(--text-dim)] uppercase tracking-widest">
+<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-radio text-[var(--accent)] animate-pulse" aria-hidden="true">
+<path d="M4.9 19.1C1 15.2 1 8.8 4.9 4.9">
+</path>
+<path d="M7.8 16.2c-2.3-2.3-2.3-6.1 0-8.5">
+</path>
+<circle cx="12" cy="12" r="2">
+</circle>
+<path d="M16.2 7.8c2.3 2.3 2.3 6.1 0 8.5">
+</path>
+<path d="M19.1 4.9C23 8.8 23 15.1 19.1 19">
+</path>
+</svg>Currently</div>
+<div class="mt-2 font-display text-[var(--text)]">College Circle AI — backend co-dev</div>
+<div class="mt-3 h-1.5 rounded-full bg-[var(--bg-elev)] overflow-hidden">
+<div class="h-full bg-[var(--accent)] rounded-full" style="width: 59%;">
+</div>
+</div>
+<div class="mt-3 flex items-center justify-between font-mono text-[11px] text-[var(--text-dim)]">
+<span>payments · AI controls</span>
+<span>webhooks · CI</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7 space-y-6 text-[var(--text-muted)] leading-relaxed">
+<p>I'm a B.Tech AI &amp; ML undergraduate at NMIMS MPSTME, Shirpur who likes living at the intersection of research and shipping. Whether it's a RAG assistant over placement records, a payment-recovery workflow, or a voice-first dispute agent - I care about the outcome as much as the model.</p>
+<p>Outside of building, I'm a Google Gemini Student Ambassador and the Student Placement Coordinator on campus, and I organise workshops and hackathons around GenAI and cloud. I published a book chapter with Springer Nature and ship projects on GitHub.</p>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-4">
+<div class="card p-4 hover:-translate-y-0.5">
+<div class="font-display text-2xl md:text-3xl text-[var(--accent)]">6+</div>
+<div class="text-xs text-[var(--text-dim)] mt-1">GitHub repos</div>
+</div>
+<div class="card p-4 hover:-translate-y-0.5">
+<div class="font-display text-2xl md:text-3xl text-[var(--accent)]">200+</div>
+<div class="text-xs text-[var(--text-dim)] mt-1">Students mentored</div>
+</div>
+<div class="card p-4 hover:-translate-y-0.5">
+<div class="font-display text-2xl md:text-3xl text-[var(--accent)]">6</div>
+<div class="text-xs text-[var(--text-dim)] mt-1">AI certifications</div>
+</div>
+<div class="card p-4 hover:-translate-y-0.5">
+<div class="font-display text-2xl md:text-3xl text-[var(--accent)]">1</div>
+<div class="text-xs text-[var(--text-dim)] mt-1">Springer book chapter</div>
+</div>
+</div>
+<div class="pt-6">
+<div class="text-sm font-mono text-[var(--text-dim)] flex items-center gap-2 mb-4">
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap text-[var(--accent)]" aria-hidden="true">
+<path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z">
+</path>
+<path d="M22 10v6">
+</path>
+<path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5">
+</path>
+</svg>Education</div>
+<ol class="space-y-3">
+<li class="flex flex-col md:flex-row md:items-center md:justify-between gap-1 md:gap-4 border-b border-dashed border-[var(--border)] pb-3">
+<div>
+<div class="text-[var(--text)]">B.Tech, Artificial Intelligence &amp; Machine Learning</div>
+<div class="text-sm text-[var(--text-dim)]">SVKM'S NMIMS MPSTME, Shirpur · CGPA 2.79 / 4.0 · Class of 2027</div>
+</div>
+<div class="text-xs font-mono text-[var(--text-dim)] whitespace-nowrap">Jul 2023 — May 2027 (expected)</div>
+</li>
+<li class="flex flex-col md:flex-row md:items-center md:justify-between gap-1 md:gap-4 border-b border-dashed border-[var(--border)] pb-3">
+<div>
+<div class="text-[var(--text)]">Senior Secondary (Class XII) · HSC, Maharashtra State Board</div>
+<div class="text-sm text-[var(--text-dim)]">R. C. Patel Arts and Science Jr. College, Shirpur · 82.83%</div>
+</div>
+<div class="text-xs font-mono text-[var(--text-dim)] whitespace-nowrap">Feb 2023</div>
+</li>
+<li class="flex flex-col md:flex-row md:items-center md:justify-between gap-1 md:gap-4 border-b border-dashed border-[var(--border)] pb-3">
+<div>
+<div class="text-[var(--text)]">Secondary (Class X) · SSC, Maharashtra State Board</div>
+<div class="text-sm text-[var(--text-dim)]">R. C. Patel Secondary School, Shirpur · 87.20%</div>
+</div>
+<div class="text-xs font-mono text-[var(--text-dim)] whitespace-nowrap">2021</div>
+</li>
+</ol>
+</div>
+<div class="pt-4 text-sm">
+<span class="text-[var(--text-dim)]">Email — </span>
+<a href="mailto:sagargurav1812@gmail.com" class="text-[var(--text)] link-underline">sagargurav1812@gmail.com</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<div class="" style="opacity: 0; transform: translateY(22px); transition: opacity 0.7s, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1); will-change: opacity, transform;">
+<section id="skills" class="section border-t border-[var(--border)]">
+<div class="container-x">
+<div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+<div>
+<div class="section-eyebrow">
+<span class="w-6 h-px bg-[var(--accent)]">
+</span> 02 / Toolbelt</div>
+<h2 class="section-title">The stack I reach for when I want to ship.</h2>
+</div>
+<p class="text-[var(--text-muted)] max-w-md text-sm">A blend of modern ML frameworks, battle-tested data tools and the web stack to wrap it all in a delightful interface.</p>
+</div>
+<div class="grid md:grid-cols-2 gap-5">
+<div class="card p-6 md:p-7">
+<div class="flex items-center gap-3 mb-5">
+<span class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-[var(--accent-soft)] text-[var(--accent)] border border-[var(--border)]">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cpu" aria-hidden="true">
+<path d="M12 20v2">
+</path>
+<path d="M12 2v2">
+</path>
+<path d="M17 20v2">
+</path>
+<path d="M17 2v2">
+</path>
+<path d="M2 12h2">
+</path>
+<path d="M2 17h2">
+</path>
+<path d="M2 7h2">
+</path>
+<path d="M20 12h2">
+</path>
+<path d="M20 17h2">
+</path>
+<path d="M20 7h2">
+</path>
+<path d="M7 20v2">
+</path>
+<path d="M7 2v2">
+</path>
+<rect x="4" y="4" width="16" height="16" rx="2">
+</rect>
+<rect x="8" y="8" width="8" height="8" rx="1">
+</rect>
+</svg>
+</span>
+<h3 class="font-display text-lg text-[var(--text)]">AI &amp; LLM</h3>
+<span class="ml-auto font-mono text-xs text-[var(--text-dim)]">06</span>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="chip">LangChain</span>
+<span class="chip">LangGraph</span>
+<span class="chip">RAG</span>
+<span class="chip">Gemini</span>
+<span class="chip">ChromaDB</span>
+<span class="chip">Pinecone</span>
+</div>
+</div>
+<div class="card p-6 md:p-7">
+<div class="flex items-center gap-3 mb-5">
+<span class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-[var(--accent-soft)] text-[var(--accent)] border border-[var(--border)]">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cpu" aria-hidden="true">
+<path d="M12 20v2">
+</path>
+<path d="M12 2v2">
+</path>
+<path d="M17 20v2">
+</path>
+<path d="M17 2v2">
+</path>
+<path d="M2 12h2">
+</path>
+<path d="M2 17h2">
+</path>
+<path d="M2 7h2">
+</path>
+<path d="M20 12h2">
+</path>
+<path d="M20 17h2">
+</path>
+<path d="M20 7h2">
+</path>
+<path d="M7 20v2">
+</path>
+<path d="M7 2v2">
+</path>
+<rect x="4" y="4" width="16" height="16" rx="2">
+</rect>
+<rect x="8" y="8" width="8" height="8" rx="1">
+</rect>
+</svg>
+</span>
+<h3 class="font-display text-lg text-[var(--text)]">Backend &amp; Data</h3>
+<span class="ml-auto font-mono text-xs text-[var(--text-dim)]">06</span>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="chip">Python</span>
+<span class="chip">FastAPI</span>
+<span class="chip">Flask</span>
+<span class="chip">PostgreSQL</span>
+<span class="chip">MongoDB</span>
+<span class="chip">Supabase</span>
+</div>
+</div>
+<div class="card p-6 md:p-7">
+<div class="flex items-center gap-3 mb-5">
+<span class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-[var(--accent-soft)] text-[var(--accent)] border border-[var(--border)]">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cpu" aria-hidden="true">
+<path d="M12 20v2">
+</path>
+<path d="M12 2v2">
+</path>
+<path d="M17 20v2">
+</path>
+<path d="M17 2v2">
+</path>
+<path d="M2 12h2">
+</path>
+<path d="M2 17h2">
+</path>
+<path d="M2 7h2">
+</path>
+<path d="M20 12h2">
+</path>
+<path d="M20 17h2">
+</path>
+<path d="M20 7h2">
+</path>
+<path d="M7 20v2">
+</path>
+<path d="M7 2v2">
+</path>
+<rect x="4" y="4" width="16" height="16" rx="2">
+</rect>
+<rect x="8" y="8" width="8" height="8" rx="1">
+</rect>
+</svg>
+</span>
+<h3 class="font-display text-lg text-[var(--text)]">Web &amp; Testing</h3>
+<span class="ml-auto font-mono text-xs text-[var(--text-dim)]">06</span>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="chip">React</span>
+<span class="chip">Next.js</span>
+<span class="chip">TypeScript</span>
+<span class="chip">Selenium</span>
+<span class="chip">PyTest</span>
+<span class="chip">GitHub Actions</span>
+</div>
+</div>
+<div class="card p-6 md:p-7">
+<div class="flex items-center gap-3 mb-5">
+<span class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-[var(--accent-soft)] text-[var(--accent)] border border-[var(--border)]">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cpu" aria-hidden="true">
+<path d="M12 20v2">
+</path>
+<path d="M12 2v2">
+</path>
+<path d="M17 20v2">
+</path>
+<path d="M17 2v2">
+</path>
+<path d="M2 12h2">
+</path>
+<path d="M2 17h2">
+</path>
+<path d="M2 7h2">
+</path>
+<path d="M20 12h2">
+</path>
+<path d="M20 17h2">
+</path>
+<path d="M20 7h2">
+</path>
+<path d="M7 20v2">
+</path>
+<path d="M7 2v2">
+</path>
+<rect x="4" y="4" width="16" height="16" rx="2">
+</rect>
+<rect x="8" y="8" width="8" height="8" rx="1">
+</rect>
+</svg>
+</span>
+<h3 class="font-display text-lg text-[var(--text)]">Analytics</h3>
+<span class="ml-auto font-mono text-xs text-[var(--text-dim)]">02</span>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="chip">Power BI</span>
+<span class="chip">Excel</span>
+</div>
+</div>
+</div>
+<div class="relative mt-14 overflow-hidden border-y border-[var(--border)] py-5">
+<div class="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[var(--bg)] to-transparent z-10 pointer-events-none">
+</div>
+<div class="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[var(--bg)] to-transparent z-10 pointer-events-none">
+</div>
+<div class="flex gap-10 whitespace-nowrap marquee-track">
+<span class="font-display text-lg md:text-xl text-[var(--text-dim)]">LangChain <span class="text-[var(--accent)] mx-4">/</span>
+</span>
+<span class="font-display text-lg md:text-xl text-[var(--text-dim)]">LangGraph <span class="text-[var(--accent)] mx-4">/</span>
+</span>
+<span class="font-display text-lg md:text-xl text-[var(--text-dim)]">RAG <span class="text-[var(--accent)] mx-4">/</span>
+</span>
+<span class="font-display text-lg md:text-xl text-[var(--text-dim)]">Gemini <span class="text-[var(--accent)] mx-4">/</span>
+</span>
+<span class="font-display text-lg md:text-xl text-[var(--text-dim)]">ChromaDB <span class="text-[var(--accent)] mx-4">/</span>
+</span>
+<span class="font-display text-lg md:text-xl text-[var(--text-dim)]">Pinecone <span class="text-[var(--accent)] mx-4">/</span>
+</span>
+<span class="font-display text-lg md:text-xl text-[var(--text-dim)]">Python <span class="text-[var(--accent)] mx-4">/</span>
+</span>
+<span class="font-display text-lg md:text-xl text-[var(--text-dim)]">FastAPI <span class="text-[var(--accent)] mx-4">/</span>
+</span>
+<span class="font-display text-lg md:text-xl text-[var(--text-dim)]">Flask <span class="text-[var(--accent)] mx-4">/</span>
+</span>
+<span class="font-display text-lg md:text-xl text-[var(--text-dim)]">PostgreSQL <span class="text-[var(--accent)] mx-4">/</span>
+</span>
+<span class="font-display text-lg md:text-xl text-[var(--text-dim)]">MongoDB <span class="text-[var(--accent)] mx-4">/</span>
+</span>
+<span class="font-display text-lg md:text-xl text-[var(--text-dim)]">Supabase <span class="text-[var(--accent)] mx-4">/</span>
+</span>
+<span class="font-display text-lg md:text-xl text-[var(--text-dim)]">React <span class="text-[var(--accent)] mx-4">/</span>
+</span>
+<span class="font-display text-lg md:text-xl text-[var(--text-dim)]">Next.js <span class="text-[var(--accent)] mx-4">/</span>
+</span>
+<span class="font-display text-lg md:text-xl text-[var(--text-dim)]">TypeScript <span class="text-[var(--accent)] mx-4">/</span>
+</span>
+<span class="font-display text-lg md:text-xl text-[var(--text-dim)]">Selenium <span class="text-[var(--accent)] mx-4">/</span>
+</span>
+<span class="font-display text-lg md:text-xl text-[var(--text-dim)]">PyTest <span class="text-[var(--accent)] mx-4">/</span>
+</span>
+<span class="font-display text-lg md:text-xl text-[var(--text-dim)]">GitHub Actions <span class="text-[var(--accent)] mx-4">/</span>
+</span>
+<span class="font-display text-lg md:text-xl text-[var(--text-dim)]">Power BI <span class="text-[var(--accent)] mx-4">/</span>
+</span>
+<span class="font-display text-lg md:text-xl text-[var(--text-dim)]">Excel <span class="text-[var(--accent)] mx-4">/</span>
+</span>
+<span class="font-display text-lg md:text-xl text-[var(--text-dim)]">LangChain <span class="text-[var(--accent)] mx-4">/</span>
+</span>
+<span class="font-display text-lg md:text-xl text-[var(--text-dim)]">LangGraph <span class="text-[var(--accent)] mx-4">/</span>
+</span>
+<span class="font-display text-lg md:text-xl text-[var(--text-dim)]">RAG <span class="text-[var(--accent)] mx-4">/</span>
+</span>
+<span class="font-display text-lg md:text-xl text-[var(--text-dim)]">Gemini <span class="text-[var(--accent)] mx-4">/</span>
+</span>
+<span class="font-display text-lg md:text-xl text-[var(--text-dim)]">ChromaDB <span class="text-[var(--accent)] mx-4">/</span>
+</span>
+<span class="font-display text-lg md:text-xl text-[var(--text-dim)]">Pinecone <span class="text-[var(--accent)] mx-4">/</span>
+</span>
+<span class="font-display text-lg md:text-xl text-[var(--text-dim)]">Python <span class="text-[var(--accent)] mx-4">/</span>
+</span>
+<span class="font-display text-lg md:text-xl text-[var(--text-dim)]">FastAPI <span class="text-[var(--accent)] mx-4">/</span>
+</span>
+<span class="font-display text-lg md:text-xl text-[var(--text-dim)]">Flask <span class="text-[var(--accent)] mx-4">/</span>
+</span>
+<span class="font-display text-lg md:text-xl text-[var(--text-dim)]">PostgreSQL <span class="text-[var(--accent)] mx-4">/</span>
+</span>
+<span class="font-display text-lg md:text-xl text-[var(--text-dim)]">MongoDB <span class="text-[var(--accent)] mx-4">/</span>
+</span>
+<span class="font-display text-lg md:text-xl text-[var(--text-dim)]">Supabase <span class="text-[var(--accent)] mx-4">/</span>
+</span>
+<span class="font-display text-lg md:text-xl text-[var(--text-dim)]">React <span class="text-[var(--accent)] mx-4">/</span>
+</span>
+<span class="font-display text-lg md:text-xl text-[var(--text-dim)]">Next.js <span class="text-[var(--accent)] mx-4">/</span>
+</span>
+<span class="font-display text-lg md:text-xl text-[var(--text-dim)]">TypeScript <span class="text-[var(--accent)] mx-4">/</span>
+</span>
+<span class="font-display text-lg md:text-xl text-[var(--text-dim)]">Selenium <span class="text-[var(--accent)] mx-4">/</span>
+</span>
+<span class="font-display text-lg md:text-xl text-[var(--text-dim)]">PyTest <span class="text-[var(--accent)] mx-4">/</span>
+</span>
+<span class="font-display text-lg md:text-xl text-[var(--text-dim)]">GitHub Actions <span class="text-[var(--accent)] mx-4">/</span>
+</span>
+<span class="font-display text-lg md:text-xl text-[var(--text-dim)]">Power BI <span class="text-[var(--accent)] mx-4">/</span>
+</span>
+<span class="font-display text-lg md:text-xl text-[var(--text-dim)]">Excel <span class="text-[var(--accent)] mx-4">/</span>
+</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+<div class="" style="opacity: 0; transform: translateY(22px); transition: opacity 0.7s, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1); will-change: opacity, transform;">
+<section id="projects" class="section border-t border-[var(--border)]">
+<div class="container-x">
+<div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+<div>
+<div class="section-eyebrow">
+<span class="w-6 h-px bg-[var(--accent)]">
+</span> 03 / Selected Work</div>
+<h2 class="section-title">Projects that took me from tutorials to real builds.</h2>
+</div>
+<a href="https://github.com/sagar-grv" target="_blank" rel="noreferrer" class="btn-ghost text-sm">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github" aria-hidden="true">
+<path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+</path>
+<path d="M9 18c-4.51 2-5-2-7-2">
+</path>
+</svg> All repos</a>
+</div>
+<div class="grid md:grid-cols-2 gap-6">
+<article class="card card-lift group p-6 md:p-7 relative overflow-hidden">
+<div class="absolute -top-24 -right-24 w-56 h-56 rounded-full blur-3xl opacity-25 group-hover:opacity-40 transition-opacity" style="background: rgb(163, 230, 53);">
+</div>
+<div class="relative">
+<div class="flex items-start justify-between gap-3">
+<div>
+<div class="font-mono text-xs tracking-widest text-[var(--text-dim)] uppercase">01 · GenAI · Voice + OCR</div>
+<h3 class="mt-2 font-display text-xl md:text-2xl text-[var(--text)] leading-tight">AwaazLedger</h3>
+</div>
+<span class="shrink-0 text-xs font-mono px-2 py-1 rounded-md border border-[var(--border)] text-[var(--text-dim)]">Oct 2026</span>
+</div>
+<p class="mt-4 text-sm text-[var(--text-muted)] leading-relaxed">Autonomous AI teammate for UPI dispute resolution - Hindi/Hinglish voice notes and payment-screenshot OCR with a deterministic policy engine.</p>
+<ul class="mt-5 grid sm:grid-cols-3 gap-2">
+<li class="flex items-start gap-2 text-xs text-[var(--text-muted)]">
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check mt-0.5 shrink-0" aria-hidden="true" style="color: rgb(163, 230, 53);">
+<circle cx="12" cy="12" r="10">
+</circle>
+<path d="m9 12 2 2 4-4">
+</path>
+</svg>
+<span>Paytm Build for India hackathon demo</span>
+</li>
+<li class="flex items-start gap-2 text-xs text-[var(--text-muted)]">
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check mt-0.5 shrink-0" aria-hidden="true" style="color: rgb(163, 230, 53);">
+<circle cx="12" cy="12" r="10">
+</circle>
+<path d="m9 12 2 2 4-4">
+</path>
+</svg>
+<span>Hindi/Hinglish voice + screenshot OCR</span>
+</li>
+<li class="flex items-start gap-2 text-xs text-[var(--text-muted)]">
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check mt-0.5 shrink-0" aria-hidden="true" style="color: rgb(163, 230, 53);">
+<circle cx="12" cy="12" r="10">
+</circle>
+<path d="m9 12 2 2 4-4">
+</path>
+</svg>
+<span>Deterministic policy engine</span>
+</li>
+</ul>
+<div class="mt-6 flex flex-wrap gap-2">
+<span class="chip">Sarvam</span>
+<span class="chip">OCR</span>
+<span class="chip">GenAI</span>
+<span class="chip">UPI</span>
+</div>
+<div class="mt-6 flex items-center gap-4 pt-5 border-t border-[var(--border)]">
+<a href="https://github.com/sagar-grv/awaazledger" target="_blank" rel="noreferrer" class="inline-flex items-center gap-1.5 text-sm text-[var(--text-muted)] hover:text-[var(--accent)] transition">
+<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github" aria-hidden="true">
+<path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+</path>
+<path d="M9 18c-4.51 2-5-2-7-2">
+</path>
+</svg> Code</a>
+<a href="https://awaazledger-sg.vercel.app/" class="inline-flex items-center gap-1.5 text-sm text-[var(--text-muted)] hover:text-[var(--accent)] transition">
+<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true">
+<path d="M7 7h10v10">
+</path>
+<path d="M7 17 17 7">
+</path>
+</svg> Live demo</a>
+</div>
+</div>
+</article>
+<article class="card card-lift group p-6 md:p-7 relative overflow-hidden">
+<div class="absolute -top-24 -right-24 w-56 h-56 rounded-full blur-3xl opacity-25 group-hover:opacity-40 transition-opacity" style="background: rgb(103, 232, 249);">
+</div>
+<div class="relative">
+<div class="flex items-start justify-between gap-3">
+<div>
+<div class="font-mono text-xs tracking-widest text-[var(--text-dim)] uppercase">02 · RAG · Placement Intelligence</div>
+<h3 class="mt-2 font-display text-xl md:text-2xl text-[var(--text)] leading-tight">Campus AI</h3>
+</div>
+<span class="shrink-0 text-xs font-mono px-2 py-1 rounded-md border border-[var(--border)] text-[var(--text-dim)]">2026</span>
+</div>
+<p class="mt-4 text-sm text-[var(--text-muted)] leading-relaxed">Placement intelligence with hybrid retrieval and cited answers over 115+ company-drive records. FastAPI, React, MongoDB, RAG.</p>
+<ul class="mt-5 grid sm:grid-cols-3 gap-2">
+<li class="flex items-start gap-2 text-xs text-[var(--text-muted)]">
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check mt-0.5 shrink-0" aria-hidden="true" style="color: rgb(103, 232, 249);">
+<circle cx="12" cy="12" r="10">
+</circle>
+<path d="m9 12 2 2 4-4">
+</path>
+</svg>
+<span>115+ drive records with cited answers</span>
+</li>
+<li class="flex items-start gap-2 text-xs text-[var(--text-muted)]">
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check mt-0.5 shrink-0" aria-hidden="true" style="color: rgb(103, 232, 249);">
+<circle cx="12" cy="12" r="10">
+</circle>
+<path d="m9 12 2 2 4-4">
+</path>
+</svg>
+<span>Hybrid retrieval + eligibility checks</span>
+</li>
+<li class="flex items-start gap-2 text-xs text-[var(--text-muted)]">
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check mt-0.5 shrink-0" aria-hidden="true" style="color: rgb(103, 232, 249);">
+<circle cx="12" cy="12" r="10">
+</circle>
+<path d="m9 12 2 2 4-4">
+</path>
+</svg>
+<span>Dataset coverage, not placements managed</span>
+</li>
+</ul>
+<div class="mt-6 flex flex-wrap gap-2">
+<span class="chip">Python</span>
+<span class="chip">FastAPI</span>
+<span class="chip">React</span>
+<span class="chip">MongoDB</span>
+<span class="chip">RAG</span>
+</div>
+<div class="mt-6 flex items-center gap-4 pt-5 border-t border-[var(--border)]">
+<a href="https://github.com/sagar-grv/Campusai" target="_blank" rel="noreferrer" class="inline-flex items-center gap-1.5 text-sm text-[var(--text-muted)] hover:text-[var(--accent)] transition">
+<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github" aria-hidden="true">
+<path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+</path>
+<path d="M9 18c-4.51 2-5-2-7-2">
+</path>
+</svg> Code</a>
+<a href="https://campusai-sg.vercel.app/" class="inline-flex items-center gap-1.5 text-sm text-[var(--text-muted)] hover:text-[var(--accent)] transition">
+<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true">
+<path d="M7 7h10v10">
+</path>
+<path d="M7 17 17 7">
+</path>
+</svg> Live demo</a>
+</div>
+</div>
+</article>
+<article class="card card-lift group p-6 md:p-7 relative overflow-hidden">
+<div class="absolute -top-24 -right-24 w-56 h-56 rounded-full blur-3xl opacity-25 group-hover:opacity-40 transition-opacity" style="background: rgb(253, 164, 175);">
+</div>
+<div class="relative">
+<div class="flex items-start justify-between gap-3">
+<div>
+<div class="font-mono text-xs tracking-widest text-[var(--text-dim)] uppercase">03 · Healthcare AI · Prototype</div>
+<h3 class="mt-2 font-display text-xl md:text-2xl text-[var(--text)] leading-tight">HealthVault</h3>
+</div>
+<span class="shrink-0 text-xs font-mono px-2 py-1 rounded-md border border-[var(--border)] text-[var(--text-dim)]">2026</span>
+</div>
+<p class="mt-4 text-sm text-[var(--text-muted)] leading-relaxed">AI-assisted health-record management: report upload with Gemini interpretation, Health IDs with QR sharing, access logs and doctor verification. Prototype, not a certified medical service.</p>
+<ul class="mt-5 grid sm:grid-cols-3 gap-2">
+<li class="flex items-start gap-2 text-xs text-[var(--text-muted)]">
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check mt-0.5 shrink-0" aria-hidden="true" style="color: rgb(253, 164, 175);">
+<circle cx="12" cy="12" r="10">
+</circle>
+<path d="m9 12 2 2 4-4">
+</path>
+</svg>
+<span>Gemini report interpretation</span>
+</li>
+<li class="flex items-start gap-2 text-xs text-[var(--text-muted)]">
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check mt-0.5 shrink-0" aria-hidden="true" style="color: rgb(253, 164, 175);">
+<circle cx="12" cy="12" r="10">
+</circle>
+<path d="m9 12 2 2 4-4">
+</path>
+</svg>
+<span>Health IDs with QR sharing</span>
+</li>
+<li class="flex items-start gap-2 text-xs text-[var(--text-muted)]">
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check mt-0.5 shrink-0" aria-hidden="true" style="color: rgb(253, 164, 175);">
+<circle cx="12" cy="12" r="10">
+</circle>
+<path d="m9 12 2 2 4-4">
+</path>
+</svg>
+<span>Access logs + doctor verification</span>
+</li>
+</ul>
+<div class="mt-6 flex flex-wrap gap-2">
+<span class="chip">Next.js</span>
+<span class="chip">TypeScript</span>
+<span class="chip">Supabase</span>
+<span class="chip">Gemini</span>
+<span class="chip">React</span>
+</div>
+<div class="mt-6 flex items-center gap-4 pt-5 border-t border-[var(--border)]">
+<a href="https://github.com/sagar-grv/healthvault" target="_blank" rel="noreferrer" class="inline-flex items-center gap-1.5 text-sm text-[var(--text-muted)] hover:text-[var(--accent)] transition">
+<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github" aria-hidden="true">
+<path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+</path>
+<path d="M9 18c-4.51 2-5-2-7-2">
+</path>
+</svg> Code</a>
+<a href="https://healthvault-dusky.vercel.app/" class="inline-flex items-center gap-1.5 text-sm text-[var(--text-muted)] hover:text-[var(--accent)] transition">
+<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true">
+<path d="M7 7h10v10">
+</path>
+<path d="M7 17 17 7">
+</path>
+</svg> Live demo</a>
+</div>
+</div>
+</article>
+<article class="card card-lift group p-6 md:p-7 relative overflow-hidden">
+<div class="absolute -top-24 -right-24 w-56 h-56 rounded-full blur-3xl opacity-25 group-hover:opacity-40 transition-opacity" style="background: rgb(251, 191, 36);">
+</div>
+<div class="relative">
+<div class="flex items-start justify-between gap-3">
+<div>
+<div class="font-mono text-xs tracking-widest text-[var(--text-dim)] uppercase">04 · Backend · Payments</div>
+<h3 class="mt-2 font-display text-xl md:text-2xl text-[var(--text)] leading-tight">Project Lifeline</h3>
+</div>
+<span class="shrink-0 text-xs font-mono px-2 py-1 rounded-md border border-[var(--border)] text-[var(--text-dim)]">2026</span>
+</div>
+<p class="mt-4 text-sm text-[var(--text-muted)] leading-relaxed">Payment-recovery workflows with HMAC-verified Razorpay test-mode webhooks and PostgreSQL. 104-transaction simulation: ~51% recovery vs 22% blind retry; no production results.</p>
+<ul class="mt-5 grid sm:grid-cols-3 gap-2">
+<li class="flex items-start gap-2 text-xs text-[var(--text-muted)]">
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check mt-0.5 shrink-0" aria-hidden="true" style="color: rgb(251, 191, 36);">
+<circle cx="12" cy="12" r="10">
+</circle>
+<path d="m9 12 2 2 4-4">
+</path>
+</svg>
+<span>HMAC-verified test-mode webhooks</span>
+</li>
+<li class="flex items-start gap-2 text-xs text-[var(--text-muted)]">
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check mt-0.5 shrink-0" aria-hidden="true" style="color: rgb(251, 191, 36);">
+<circle cx="12" cy="12" r="10">
+</circle>
+<path d="m9 12 2 2 4-4">
+</path>
+</svg>
+<span>Simulation: ~51% vs 22% blind retry</span>
+</li>
+<li class="flex items-start gap-2 text-xs text-[var(--text-muted)]">
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check mt-0.5 shrink-0" aria-hidden="true" style="color: rgb(251, 191, 36);">
+<circle cx="12" cy="12" r="10">
+</circle>
+<path d="m9 12 2 2 4-4">
+</path>
+</svg>
+<span>No production merchant results</span>
+</li>
+</ul>
+<div class="mt-6 flex flex-wrap gap-2">
+<span class="chip">Python</span>
+<span class="chip">FastAPI</span>
+<span class="chip">PostgreSQL</span>
+<span class="chip">Razorpay</span>
+<span class="chip">Webhooks</span>
+</div>
+<div class="mt-6 flex items-center gap-4 pt-5 border-t border-[var(--border)]">
+<a href="https://github.com/sagar-grv/razorpay-lifeline" target="_blank" rel="noreferrer" class="inline-flex items-center gap-1.5 text-sm text-[var(--text-muted)] hover:text-[var(--accent)] transition">
+<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github" aria-hidden="true">
+<path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+</path>
+<path d="M9 18c-4.51 2-5-2-7-2">
+</path>
+</svg> Code</a>
+<a href="https://github.com/sagar-grv/razorpay-lifeline" class="inline-flex items-center gap-1.5 text-sm text-[var(--text-muted)] hover:text-[var(--accent)] transition">
+<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true">
+<path d="M7 7h10v10">
+</path>
+<path d="M7 17 17 7">
+</path>
+</svg> Live demo</a>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+</div>
+<div class="" style="opacity: 0; transform: translateY(22px); transition: opacity 0.7s, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1); will-change: opacity, transform;">
+<section id="experience" class="section border-t border-[var(--border)]">
+<div class="container-x">
+<div class="mb-12">
+<div class="section-eyebrow">
+<span class="w-6 h-px bg-[var(--accent)]">
+</span> 04 / Experience</div>
+<h2 class="section-title">Where I've been building, teaching and shipping.</h2>
+</div>
+<div class="relative">
+<div class="absolute left-4 md:left-6 top-2 bottom-2 w-px bg-[var(--border)]">
+</div>
+<div class="space-y-8">
+<div class="relative pl-12 md:pl-16">
+<div class="absolute left-2 md:left-4 top-1.5 w-5 h-5 rounded-full bg-[var(--bg)] border border-[var(--accent)] flex items-center justify-center">
+<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle text-[var(--accent)]" aria-hidden="true">
+<circle cx="12" cy="12" r="10">
+</circle>
+</svg>
+</div>
+<div class="card p-6 md:p-7">
+<div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2 md:gap-6">
+<div class="flex items-center gap-3">
+<span class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-[var(--accent-soft)] text-[var(--accent)] border border-[var(--border)]">
+<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-briefcase" aria-hidden="true">
+<path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16">
+</path>
+<rect width="20" height="14" x="2" y="6" rx="2">
+</rect>
+</svg>
+</span>
+<div>
+<h3 class="font-display text-lg text-[var(--text)]">Co-Developer</h3>
+<div class="text-sm text-[var(--text-dim)]">College Circle AI</div>
+</div>
+</div>
+<div class="font-mono text-xs text-[var(--text-dim)] md:text-right">2026 — Present</div>
+</div>
+<ul class="mt-5 space-y-2.5">
+<li class="text-sm text-[var(--text-muted)] leading-relaxed pl-4 relative">
+<span class="absolute left-0 top-2 w-1.5 h-1.5 rounded-full bg-[var(--accent)]">
+</span>Building the TypeScript backend: payment logic, AI usage controls, webhook handling and CI workflows.</li>
+<li class="text-sm text-[var(--text-muted)] leading-relaxed pl-4 relative">
+<span class="absolute left-0 top-2 w-1.5 h-1.5 rounded-full bg-[var(--accent)]">
+</span>Backend pull requests in review with the maintainer.</li>
+<li class="text-sm text-[var(--text-muted)] leading-relaxed pl-4 relative">
+<span class="absolute left-0 top-2 w-1.5 h-1.5 rounded-full bg-[var(--accent)]">
+</span>Contribution-stage work - nothing merged or deployed yet.</li>
+</ul>
+</div>
+</div>
+<div class="relative pl-12 md:pl-16">
+<div class="absolute left-2 md:left-4 top-1.5 w-5 h-5 rounded-full bg-[var(--bg)] border border-[var(--accent)] flex items-center justify-center">
+<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle text-[var(--accent)]" aria-hidden="true">
+<circle cx="12" cy="12" r="10">
+</circle>
+</svg>
+</div>
+<div class="card p-6 md:p-7">
+<div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2 md:gap-6">
+<div class="flex items-center gap-3">
+<span class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-[var(--accent-soft)] text-[var(--accent)] border border-[var(--border)]">
+<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-briefcase" aria-hidden="true">
+<path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16">
+</path>
+<rect width="20" height="14" x="2" y="6" rx="2">
+</rect>
+</svg>
+</span>
+<div>
+<h3 class="font-display text-lg text-[var(--text)]">Google Gemini Student Ambassador</h3>
+<div class="text-sm text-[var(--text-dim)]">Google</div>
+</div>
+</div>
+<div class="font-mono text-xs text-[var(--text-dim)] md:text-right">Jul 2025 — Jul 2026</div>
+</div>
+<ul class="mt-5 space-y-2.5">
+<li class="text-sm text-[var(--text-muted)] leading-relaxed pl-4 relative">
+<span class="absolute left-0 top-2 w-1.5 h-1.5 rounded-full bg-[var(--accent)]">
+</span>Explained Google Cloud, Gemini and modern AI fundamentals to 200+ students.</li>
+<li class="text-sm text-[var(--text-muted)] leading-relaxed pl-4 relative">
+<span class="absolute left-0 top-2 w-1.5 h-1.5 rounded-full bg-[var(--accent)]">
+</span>Organised workshops and hackathons around GenAI and cloud.</li>
+</ul>
+</div>
+</div>
+<div class="relative pl-12 md:pl-16">
+<div class="absolute left-2 md:left-4 top-1.5 w-5 h-5 rounded-full bg-[var(--bg)] border border-[var(--accent)] flex items-center justify-center">
+<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle text-[var(--accent)]" aria-hidden="true">
+<circle cx="12" cy="12" r="10">
+</circle>
+</svg>
+</div>
+<div class="card p-6 md:p-7">
+<div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2 md:gap-6">
+<div class="flex items-center gap-3">
+<span class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-[var(--accent-soft)] text-[var(--accent)] border border-[var(--border)]">
+<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-briefcase" aria-hidden="true">
+<path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16">
+</path>
+<rect width="20" height="14" x="2" y="6" rx="2">
+</rect>
+</svg>
+</span>
+<div>
+<h3 class="font-display text-lg text-[var(--text)]">Student Placement Coordinator</h3>
+<div class="text-sm text-[var(--text-dim)]">NMIMS MPSTME, Shirpur</div>
+</div>
+</div>
+<div class="font-mono text-xs text-[var(--text-dim)] md:text-right">Jan 2026 — Present</div>
+</div>
+<ul class="mt-5 space-y-2.5">
+<li class="text-sm text-[var(--text-muted)] leading-relaxed pl-4 relative">
+<span class="absolute left-0 top-2 w-1.5 h-1.5 rounded-full bg-[var(--accent)]">
+</span>Recruiter-student communication, drive scheduling and placement reports.</li>
+</ul>
+</div>
+</div>
+<div class="relative pl-12 md:pl-16">
+<div class="absolute left-2 md:left-4 top-1.5 w-5 h-5 rounded-full bg-[var(--bg)] border border-[var(--accent)] flex items-center justify-center">
+<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle text-[var(--accent)]" aria-hidden="true">
+<circle cx="12" cy="12" r="10">
+</circle>
+</svg>
+</div>
+<div class="card p-6 md:p-7">
+<div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2 md:gap-6">
+<div class="flex items-center gap-3">
+<span class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-[var(--accent-soft)] text-[var(--accent)] border border-[var(--border)]">
+<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-briefcase" aria-hidden="true">
+<path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16">
+</path>
+<rect width="20" height="14" x="2" y="6" rx="2">
+</rect>
+</svg>
+</span>
+<div>
+<h3 class="font-display text-lg text-[var(--text)]">Web Developer</h3>
+<div class="text-sm text-[var(--text-dim)]">GDG on Campus, MPSTME Shirpur</div>
+</div>
+</div>
+<div class="font-mono text-xs text-[var(--text-dim)] md:text-right">Dec 2025 — Present</div>
+</div>
+<ul class="mt-5 space-y-2.5">
+<li class="text-sm text-[var(--text-muted)] leading-relaxed pl-4 relative">
+<span class="absolute left-0 top-2 w-1.5 h-1.5 rounded-full bg-[var(--accent)]">
+</span>Web developer for the campus Google Developer Group community.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<div class="" style="opacity: 0; transform: translateY(22px); transition: opacity 0.7s, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1); will-change: opacity, transform;">
+<section id="achievements" class="section border-t border-[var(--border)]">
+<div class="container-x">
+<div class="mb-12">
+<div class="section-eyebrow">
+<span class="w-6 h-px bg-[var(--accent)]">
+</span> 05 / Wins</div>
+<h2 class="section-title">Certifications &amp; little victories along the way.</h2>
+</div>
+<div class="grid lg:grid-cols-2 gap-6">
+<div class="card p-6 md:p-7">
+<div class="flex items-center gap-3 mb-5">
+<span class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-[var(--accent-soft)] text-[var(--accent)] border border-[var(--border)]">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award" aria-hidden="true">
+<path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526">
+</path>
+<circle cx="12" cy="8" r="6">
+</circle>
+</svg>
+</span>
+<h3 class="font-display text-lg text-[var(--text)]">Certifications</h3>
+</div>
+<ul class="divide-y divide-[var(--border)]">
+<li class="py-3 flex items-start justify-between gap-4">
+<div>
+<div class="text-[var(--text)]">Managing Projects with AI</div>
+<div class="text-xs text-[var(--text-dim)] mt-0.5">AI CERTs × Coursera</div>
+</div>
+<span class="font-mono text-xs text-[var(--text-dim)] whitespace-nowrap pt-0.5">2026</span>
+</li>
+<li class="py-3 flex items-start justify-between gap-4">
+<div>
+<div class="text-[var(--text)]">MCP: Advanced Topics</div>
+<div class="text-xs text-[var(--text-dim)] mt-0.5">Anthropic</div>
+</div>
+<span class="font-mono text-xs text-[var(--text-dim)] whitespace-nowrap pt-0.5">
+</span>
+</li>
+<li class="py-3 flex items-start justify-between gap-4">
+<div>
+<div class="text-[var(--text)]">5-Day AI Agents Intensive</div>
+<div class="text-xs text-[var(--text-dim)] mt-0.5">Google × Kaggle</div>
+</div>
+<span class="font-mono text-xs text-[var(--text-dim)] whitespace-nowrap pt-0.5">
+</span>
+</li>
+<li class="py-3 flex items-start justify-between gap-4">
+<div>
+<div class="text-[var(--text)]">Develop Generative AI Applications</div>
+<div class="text-xs text-[var(--text-dim)] mt-0.5">IBM × Coursera</div>
+</div>
+<span class="font-mono text-xs text-[var(--text-dim)] whitespace-nowrap pt-0.5">
+</span>
+</li>
+<li class="py-3 flex items-start justify-between gap-4">
+<div>
+<div class="text-[var(--text)]">Claude 101</div>
+<div class="text-xs text-[var(--text-dim)] mt-0.5">Anthropic</div>
+</div>
+<span class="font-mono text-xs text-[var(--text-dim)] whitespace-nowrap pt-0.5">
+</span>
+</li>
+<li class="py-3 flex items-start justify-between gap-4">
+<div>
+<div class="text-[var(--text)]">AI Fluency for Builders</div>
+<div class="text-xs text-[var(--text-dim)] mt-0.5">Anthropic × CodePath</div>
+</div>
+<span class="font-mono text-xs text-[var(--text-dim)] whitespace-nowrap pt-0.5">
+</span>
+</li>
+</ul>
+</div>
+<div class="card p-6 md:p-7">
+<div class="flex items-center gap-3 mb-5">
+<span class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-[var(--accent-soft)] text-[var(--accent)] border border-[var(--border)]">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trophy" aria-hidden="true">
+<path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6">
+</path>
+<path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18">
+</path>
+<path d="M4 22h16">
+</path>
+<path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22">
+</path>
+<path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22">
+</path>
+<path d="M18 2H6v7a6 6 0 0 0 12 0V2Z">
+</path>
+</svg>
+</span>
+<h3 class="font-display text-lg text-[var(--text)]">Highlights</h3>
+</div>
+<ul class="space-y-3">
+<li class="flex items-start gap-3 text-sm text-[var(--text-muted)]">
+<span class="mt-1 font-mono text-[10px] text-[var(--accent)]">01</span>
+<span>First place, Yugantar 2.0 hackathon - Team AGENS (EMR interoperability, FHIR R4)</span>
+</li>
+<li class="flex items-start gap-3 text-sm text-[var(--text-muted)]">
+<span class="mt-1 font-mono text-[10px] text-[var(--accent)]">02</span>
+<span>Book chapter published online-first by Springer Nature</span>
+</li>
+<li class="flex items-start gap-3 text-sm text-[var(--text-muted)]">
+<span class="mt-1 font-mono text-[10px] text-[var(--accent)]">03</span>
+<span>Legends Tier, Google Cloud Arcade - Cohort 1</span>
+</li>
+<li class="flex items-start gap-3 text-sm text-[var(--text-muted)]">
+<span class="mt-1 font-mono text-[10px] text-[var(--accent)]">04</span>
+<span>Mentored 200+ students on Google Cloud, Gemini &amp; AI</span>
+</li>
+<li class="flex items-start gap-3 text-sm text-[var(--text-muted)]">
+<span class="mt-1 font-mono text-[10px] text-[var(--accent)]">05</span>
+<span>Organised GenAI and cloud workshops on campus</span>
+</li>
+<li class="flex items-start gap-3 text-sm text-[var(--text-muted)]">
+<span class="mt-1 font-mono text-[10px] text-[var(--accent)]">06</span>
+<span>Student Placement Coordinator, NMIMS MPSTME</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+</div>
+<div class="" style="opacity: 0; transform: translateY(22px); transition: opacity 0.7s, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1); will-change: opacity, transform;">
+<section id="contact" class="section border-t border-[var(--border)]">
+<div class="container-x">
+<div class="grid lg:grid-cols-12 gap-12">
+<div class="lg:col-span-5">
+<div class="section-eyebrow">
+<span class="w-6 h-px bg-[var(--accent)]">
+</span> 06 / Contact</div>
+<h2 class="section-title">Got an idea, role or research you want to talk about?</h2>
+<p class="mt-5 text-[var(--text-muted)] leading-relaxed max-w-md">I'm currently open to AI, backend and developer-tool internships and research collaborations. Get in touch.</p>
+<div class="mt-8 space-y-3">
+<a href="mailto:sagargurav1812@gmail.com" class="card p-4 flex items-center gap-3 group hover:border-[var(--accent)]/60">
+<span class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-[var(--accent-soft)] text-[var(--accent)] border border-[var(--border)]">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail" aria-hidden="true">
+<path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7">
+</path>
+<rect x="2" y="4" width="20" height="16" rx="2">
+</rect>
+</svg>
+</span>
+<div class="flex-1">
+<div class="text-xs text-[var(--text-dim)]">Email</div>
+<div class="text-sm text-[var(--text)]">sagargurav1812@gmail.com</div>
+</div>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right text-[var(--text-dim)] group-hover:text-[var(--accent)] group-hover:translate-x-0.5 transition" aria-hidden="true">
+<path d="M5 12h14">
+</path>
+<path d="m12 5 7 7-7 7">
+</path>
+</svg>
+</a>
+<div class="flex gap-2 flex-wrap">
+<a href="https://github.com/sagar-grv" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 px-3 py-2 rounded-lg border border-[var(--border)] text-sm text-[var(--text-muted)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition">
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github" aria-hidden="true">
+<path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+</path>
+<path d="M9 18c-4.51 2-5-2-7-2">
+</path>
+</svg> GitHub</a>
+<a href="https://www.linkedin.com/in/sagargrv/" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 px-3 py-2 rounded-lg border border-[var(--border)] text-sm text-[var(--text-muted)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition">
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin" aria-hidden="true">
+<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+</path>
+<rect width="4" height="12" x="2" y="9">
+</rect>
+<circle cx="4" cy="4" r="2">
+</circle>
+</svg> LinkedIn</a>
+<a href="https://medium.com/@sagargurav1812" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 px-3 py-2 rounded-lg border border-[var(--border)] text-sm text-[var(--text-muted)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition">
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-open" aria-hidden="true">
+<path d="M12 7v14">
+</path>
+<path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z">
+</path>
+</svg> Medium</a>
+<a href="https://www.instagram.com/sagar_grv/" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 px-3 py-2 rounded-lg border border-[var(--border)] text-sm text-[var(--text-muted)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition">
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram" aria-hidden="true">
+<rect width="20" height="20" x="2" y="2" rx="5" ry="5">
+</rect>
+<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z">
+</path>
+<line x1="17.5" x2="17.51" y1="6.5" y2="6.5">
+</line>
+</svg> Instagram</a>
+</div>
+</div>
+</div>
+<form class="lg:col-span-7 card p-6 md:p-8">
+<div class="grid md:grid-cols-2 gap-4">
+<div>
+<label class="block text-xs font-mono text-[var(--text-dim)] mb-2">Your name</label>
+<input placeholder="Ada Lovelace" class="w-full bg-[var(--bg-elev)] border border-[var(--border)] rounded-lg px-4 py-3 text-sm text-[var(--text)] placeholder:text-[var(--text-dim)] focus:outline-none focus:border-[var(--accent)] focus:ring-2 focus:ring-[var(--accent-soft)] transition" type="text" value="" name="name">
+</div>
+<div>
+<label class="block text-xs font-mono text-[var(--text-dim)] mb-2">Email</label>
+<input placeholder="you@domain.com" class="w-full bg-[var(--bg-elev)] border border-[var(--border)] rounded-lg px-4 py-3 text-sm text-[var(--text)] placeholder:text-[var(--text-dim)] focus:outline-none focus:border-[var(--accent)] focus:ring-2 focus:ring-[var(--accent-soft)] transition" type="email" value="" name="email">
+</div>
+</div>
+<div class="mt-4">
+<label class="block text-xs font-mono text-[var(--text-dim)] mb-2">Message</label>
+<textarea name="message" rows="6" placeholder="Tell me about your project, role or idea..." class="w-full bg-[var(--bg-elev)] border border-[var(--border)] rounded-lg px-4 py-3 text-sm text-[var(--text)] placeholder:text-[var(--text-dim)] focus:outline-none focus:border-[var(--accent)] focus:ring-2 focus:ring-[var(--accent-soft)] transition resize-none">
+</textarea>
+</div>
+<div class="mt-5 flex items-center justify-between">
+<p class="text-xs text-[var(--text-dim)] font-mono">Get in touch.</p>
+<button type="submit" class="btn-primary disabled:opacity-60 disabled:cursor-not-allowed">
+<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send" aria-hidden="true">
+<path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z">
+</path>
+<path d="m21.854 2.147-10.94 10.939">
+</path>
+</svg>Open email draft</button>
+</div>
+</form>
+</div>
+</div>
+</section>
+</div>
+</main>
+<footer class="border-t border-[var(--border)] bg-[var(--bg-elev)]/40">
+<div class="container-x py-10">
+<div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+<div>
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center justify-center w-8 h-8 rounded-md bg-[var(--accent)] text-[#0a0a0b] font-bold font-mono text-sm">SG</span>
+<div>
+<div class="font-display text-[var(--text)]">Sagar Gurav</div>
+<div class="text-xs font-mono text-[var(--text-dim)]">AI / ML Engineer · India</div>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<a href="https://github.com/sagar-grv" target="_blank" rel="noreferrer" aria-label="GitHub" class="p-2 rounded-md text-[var(--text-muted)] hover:text-[var(--accent)] hover:bg-white/5 transition">
+<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github" aria-hidden="true">
+<path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+</path>
+<path d="M9 18c-4.51 2-5-2-7-2">
+</path>
+</svg>
+</a>
+<a href="https://www.linkedin.com/in/sagargrv/" target="_blank" rel="noreferrer" aria-label="LinkedIn" class="p-2 rounded-md text-[var(--text-muted)] hover:text-[var(--accent)] hover:bg-white/5 transition">
+<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin" aria-hidden="true">
+<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+</path>
+<rect width="4" height="12" x="2" y="9">
+</rect>
+<circle cx="4" cy="4" r="2">
+</circle>
+</svg>
+</a>
+<a href="https://medium.com/@sagargurav1812" target="_blank" rel="noreferrer" aria-label="Medium" class="p-2 rounded-md text-[var(--text-muted)] hover:text-[var(--accent)] hover:bg-white/5 transition">
+<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-open" aria-hidden="true">
+<path d="M12 7v14">
+</path>
+<path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z">
+</path>
+</svg>
+</a>
+<a href="https://www.instagram.com/sagar_grv/" target="_blank" rel="noreferrer" aria-label="Instagram" class="p-2 rounded-md text-[var(--text-muted)] hover:text-[var(--accent)] hover:bg-white/5 transition">
+<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram" aria-hidden="true">
+<rect width="20" height="20" x="2" y="2" rx="5" ry="5">
+</rect>
+<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z">
+</path>
+<line x1="17.5" x2="17.51" y1="6.5" y2="6.5">
+</line>
+</svg>
+</a>
+<a href="#top" class="ml-2 inline-flex items-center gap-1.5 text-sm text-[var(--text-muted)] hover:text-[var(--accent)] transition">Back to top <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up" aria-hidden="true">
+<path d="m5 12 7-7 7 7">
+</path>
+<path d="M12 19V5">
+</path>
+</svg>
+</a>
+</div>
+</div>
+<div class="mt-8 pt-6 border-t border-[var(--border)] flex flex-col md:flex-row md:items-center md:justify-between gap-2 text-xs text-[var(--text-dim)] font-mono">
+<span>© 2026 Sagar Gurav. Built with React &amp; Tailwind.</span>
+<span>
+<span class="text-[var(--accent)]">&lt;</span>crafted with coffee and curiosity<span class="text-[var(--accent)]"> /&gt;</span>
+</span>
+</div>
+</div>
+</footer>
+<div class="fixed bottom-5 right-5 z-[60]">
+<div class="absolute bottom-16 right-0 w-[min(92vw,380px)] origin-bottom-right transition-all duration-300 ease-out opacity-0 scale-95 pointer-events-none">
+<div class="rounded-2xl border border-[var(--border)] bg-[var(--bg-elev)]/95 backdrop-blur-xl shadow-[0_30px_80px_-20px_rgba(0,0,0,0.7)] overflow-hidden">
+<div class="flex items-center gap-3 px-4 py-3 border-b border-[var(--border)] bg-[var(--card)]">
+<div class="relative">
+<div class="w-9 h-9 rounded-full bg-[var(--accent)] text-[#0a0a0b] flex items-center justify-center font-bold font-mono">SG</div>
+<span class="absolute -bottom-0.5 -right-0.5 w-3 h-3 rounded-full bg-[var(--accent)] border-2 border-[var(--card)] animate-pulse">
+</span>
+</div>
+<div class="flex-1">
+<div class="flex items-center gap-2">
+<span class="font-display text-sm text-[var(--text)]">Sagar's AI</span>
+<span class="text-[10px] font-mono text-[var(--accent)] px-1.5 py-0.5 rounded bg-[var(--accent-soft)] border border-[var(--border)]">nvidia</span>
+</div>
+<div class="text-[11px] font-mono text-[var(--text-dim)]">grounded on resume + github</div>
+</div>
+<button title="New chat" class="p-1.5 rounded-md text-[var(--text-dim)] hover:text-[var(--accent)] hover:bg-white/5 transition">
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-refresh-ccw" aria-hidden="true">
+<path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8">
+</path>
+<path d="M3 3v5h5">
+</path>
+<path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16">
+</path>
+<path d="M16 16h5v5">
+</path>
+</svg>
+</button>
+<button class="p-1.5 rounded-md text-[var(--text-dim)] hover:text-[var(--text)] hover:bg-white/5 transition" aria-label="Close chat">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x" aria-hidden="true">
+<path d="M18 6 6 18">
+</path>
+<path d="m6 6 12 12">
+</path>
+</svg>
+</button>
+</div>
+<div class="px-4 py-4 max-h-[58vh] min-h-[320px] overflow-y-auto space-y-3">
+<div class="flex justify-start">
+<div class="w-7 h-7 rounded-full bg-[var(--accent-soft)] border border-[var(--border)] text-[var(--accent)] flex items-center justify-center mr-2 mt-0.5 shrink-0">
+<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bot" aria-hidden="true">
+<path d="M12 8V4H8">
+</path>
+<rect width="16" height="12" x="4" y="8" rx="2">
+</rect>
+<path d="M2 14h2">
+</path>
+<path d="M20 14h2">
+</path>
+<path d="M15 13v2">
+</path>
+<path d="M9 13v2">
+</path>
+</svg>
+</div>
+<div class="max-w-[80%] rounded-xl px-3 py-2 text-sm leading-relaxed whitespace-pre-wrap bg-[var(--card)] border border-[var(--border)] text-[var(--text)] rounded-bl-sm">Hey! I'm Sagar's AI — grounded on his resume and top GitHub repos. Ask me anything about his projects, skills or experience.</div>
+</div>
+<div>
+</div>
+</div>
+<div class="px-4 pb-3 flex flex-wrap gap-2">
+<button class="text-xs px-2.5 py-1.5 rounded-full border border-[var(--border)] bg-[var(--bg-elev)]/60 text-[var(--text-muted)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition">Summarise Sagar's strongest projects</button>
+<button class="text-xs px-2.5 py-1.5 rounded-full border border-[var(--border)] bg-[var(--bg-elev)]/60 text-[var(--text-muted)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition">What's his experience with GenAI?</button>
+<button class="text-xs px-2.5 py-1.5 rounded-full border border-[var(--border)] bg-[var(--bg-elev)]/60 text-[var(--text-muted)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition">Which tech stack does he know best?</button>
+<button class="text-xs px-2.5 py-1.5 rounded-full border border-[var(--border)] bg-[var(--bg-elev)]/60 text-[var(--text-muted)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition">Is he open to internships?</button>
+</div>
+<form class="p-3 border-t border-[var(--border)] bg-[var(--card)]">
+<div class="flex items-end gap-2 rounded-xl border border-[var(--border)] bg-[var(--bg-elev)] px-3 py-2 focus-within:border-[var(--accent)] transition">
+<textarea rows="1" placeholder="Ask about Sagar's projects, skills, experience..." class="flex-1 resize-none bg-transparent outline-none text-sm text-[var(--text)] placeholder:text-[var(--text-dim)] min-h-[22px] max-h-24">
+</textarea>
+<button type="submit" disabled="" class="shrink-0 w-9 h-9 rounded-lg bg-[var(--accent)] text-[#0a0a0b] flex items-center justify-center disabled:opacity-40 disabled:cursor-not-allowed hover:bg-[var(--accent-strong)] transition" aria-label="Open email draft">
+<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send" aria-hidden="true">
+<path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z">
+</path>
+<path d="m21.854 2.147-10.94 10.939">
+</path>
+</svg>
+</button>
+</div>
+<p class="mt-2 text-[10px] font-mono text-[var(--text-dim)] flex items-center gap-1.5">
+<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles text-[var(--accent)]" aria-hidden="true">
+<path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z">
+</path>
+<path d="M20 3v4">
+</path>
+<path d="M22 5h-4">
+</path>
+<path d="M4 17v2">
+</path>
+<path d="M5 18H3">
+</path>
+</svg>Answers are AI-generated from Sagar's resume &amp; GitHub — verify anything critical.</p>
+</form>
+</div>
+</div>
+<div class="absolute bottom-16 right-0 mb-1 w-60 rounded-xl border border-[var(--border)] bg-[var(--bg-elev)] px-3 py-2 shadow-lg fade-up">
+<div class="text-xs text-[var(--text)]">
+<span class="text-[var(--accent)] font-mono">›</span> Ask my AI about my projects — it knows my resume &amp; GitHub.</div>
+<div class="absolute -bottom-1.5 right-5 w-3 h-3 rotate-45 bg-[var(--bg-elev)] border-b border-r border-[var(--border)]">
+</div>
+</div>
+<button class="relative w-14 h-14 rounded-full bg-[var(--accent)] text-[#0a0a0b] flex items-center justify-center shadow-[0_18px_50px_-10px_rgba(163,230,53,0.55)] hover:scale-105 active:scale-95 transition-transform group" aria-label="Open chat">
+<span class="absolute inset-0 rounded-full bg-[var(--accent)] opacity-50 group-hover:opacity-0 animate-ping">
+</span>
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle" aria-hidden="true">
+<path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z">
+</path>
+</svg>
+<span class="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-[var(--bg)] text-[var(--accent)] border border-[var(--border)] text-[10px] font-mono flex items-center justify-center">AI</span>
+</button>
+</div>
+</div>
+<div role="region" aria-label="Notifications (F8)" tabindex="-1" style="pointer-events: none;">
+<ol tabindex="-1" class="fixed top-0 z-[100] flex max-h-screen w-full flex-col-reverse p-4 sm:bottom-0 sm:right-0 sm:top-auto sm:flex-col md:max-w-[420px]">
+</ol>
+</div>
+</div>
+</div>
+<script defer src="/static/ai-bar.js">
+</script>
+</body>
+  </html>
