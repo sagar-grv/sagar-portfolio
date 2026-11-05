@@ -135,8 +135,8 @@ function addCertList(m,hitsAll){
   });
   m.appendChild(box);
 }
-function addSources(m,query){
-  var allHits=score(query).filter(function(r){return r.s>=3;});
+function addSources(m,query,minS){
+  var allHits=score(query).filter(function(r){return r.s>=(minS||3);});
   addCertList(m,allHits);
   var hits=allHits.slice(0,2);
   hits.forEach(function(r){
@@ -246,7 +246,7 @@ function ask(q){
       ans=cleanAnswer(ans);
       history.push({role:'assistant',content:ans});
       var m=addMsg('bot',ans);
-      addSources(m,q);
+      addSources(m,q,6);
       busy=false;sendBtn.disabled=false;text.focus();
     }).catch(function(err){
       clearTimeout(to);
