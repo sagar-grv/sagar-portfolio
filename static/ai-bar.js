@@ -159,30 +159,6 @@ function hello(){
   addMsg('bot','Hey! I\'m Sagar\'s AI - grounded on his resume and top projects. Ask me anything about his projects, skills or experience.');
 }
 
-var FACTS=(function(){
-  var lines=[
-    'You are the AI assistant on Sagar Gurav\'s personal portfolio website. Answer visitor questions about Sagar and his work using ONLY the facts below.',
-    '',
-    'IDENTITY: Sagar Gurav, AI & ML undergraduate at SVKM\'s NMIMS Mukesh Patel School of Technology Management & Engineering - always spelled exactly NMIMS MPSTME (SVKM) - Shirpur, B.Tech Jul 2023 - May 2027 (expected). Based in India. Open to AI, backend and developer-tool internships. Email sagargurav1812@gmail.com, GitHub github.com/sagar-grv, LinkedIn linkedin.com/in/sagargrv.',
-    'SITE: the portfolio is one page with sections About (bio, education, stats), Toolbelt (skills), Selected Work (AwaazLedger, Campus AI, HealthVault, Project Lifeline), Experience, Wins (certifications and highlights) and Contact, plus this AI bar at the bottom center of the screen.',
-    '',
-    'FACTS (the only things you may state as fact):'
-  ];
-  INDEX.forEach(function(it){
-    var l='- '+it.t+' ('+it.sec+'): '+it.d;
-    if(it.links.length){l+=' Link: '+it.links.map(function(x){return x[0]+' '+x[1];}).join(' ; ');}
-    lines.push(l);
-  });
-  lines.push('');
-  lines.push('RULES:');
-  lines.push('1. Answer ONLY from the facts above. Never invent projects, employers, dates, metrics, links or claims.');
-  lines.push('2. Keep answers short: 1-4 sentences, plain text, no markdown tables. Mention the most relevant link when one exists.');
-  lines.push('3. If the answer is not in the facts, say the site does not cover it and suggest a topic it does (projects, skills, certificates, experience, contact). Do not guess.');
-  lines.push('4. Do not discuss politics, other people, or anything unrelated to Sagar\'s portfolio. Politely redirect.');
-  lines.push('5. Never ask for or repeat personal information (passwords, phone numbers, addresses).');
-  return lines.join('\n');
-})();
-
 var history=[]; /* {role,content} */
 var busy=false, lastSend=0;
 
@@ -216,31 +192,30 @@ function ask(q){
     addCertList(m,score(q).filter(function(r){return r.s>=3;}));
     return;
   }
-  var wait=Math.ceil((34000-(now-lastSend))/1000);
-  if(wait>0){addMsg('bot','The free model allows one question about every 30 seconds - please wait '+wait+'s and send again.');return;}
+  var wait=Math.ceil((3000-(now-lastSend))/1000);
+  if(wait>0){addMsg('bot','Please wait a few seconds between questions.');return;}
   busy=true;lastSend=now;sendBtn.disabled=true;
   addMsg('me',q);
   history.push({role:'user',content:q});
   if(history.length>10)history=history.slice(-10);
   showTyping();
-  var msgs=[{role:'system',content:FACTS}].concat(history);
   var attempts=0;
   function tryOnce(){
     attempts++;
     var ctrl=new AbortController();
     var to=setTimeout(function(){ctrl.abort();},30000);
-    fetch('https://text.pollinations.ai/openai',{
+    fetch('/api/chat',{
       method:'POST',
       headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({model:'openai',messages:msgs}),
+      body:JSON.stringify({messages:history}),
       signal:ctrl.signal
     }).then(function(res){
-      if(res.status===402){var ra=res.headers.get('Retry-After');throw new Error('RATE:'+(ra||'30'));}
+      if(res.status===429)throw new Error('RATE:5');
       if(!res.ok)throw new Error('HTTP '+res.status);
       return res.json();
     }).then(function(data){
       clearTimeout(to);
-      var ans=data&&data.choices&&data.choices[0]&&data.choices[0].message&&data.choices[0].message.content;
+      var ans=data&&data.answer;
       if(!ans)throw new Error('empty');
       hideTyping();
       ans=cleanAnswer(ans);
@@ -253,10 +228,10 @@ function ask(q){
       var msg=String(err&&err.message||'');
       if(msg.indexOf('RATE:')===0){
         var secs=parseInt(msg.slice(5),10)||30;
-        lastSend=Date.now()-34000+secs*1000; /* align throttle to provider window */
+        lastSend=Date.now(); /* align throttle to server window */
         hideTyping();
         history.pop();
-        addMsg('bot','The free model needs about '+secs+'s between questions - please resend in a moment.');
+        addMsg('bot','Please wait a few seconds between questions, then resend.');
         busy=false;sendBtn.disabled=false;text.focus();
         return;
       }
