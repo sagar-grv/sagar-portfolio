@@ -1,0 +1,41 @@
+/* ---------- bottom-center AI bar (only change vs the original site) ---------- */
+/* hide the original bottom-right chat widget */
+div.fixed.bottom-5.right-5{display:none!important}
+body{padding-bottom:120px}
+#aiBar{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);width:min(92vw,640px);z-index:60;font-family:'Inter',sans-serif}
+#aiForm{display:flex;align-items:center;gap:8px;background:rgba(17,17,20,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--border-strong);border-radius:999px;padding:6px 6px 6px 16px;box-shadow:0 18px 50px -12px rgba(0,0,0,.7);transition:border-color .2s}
+#aiForm:focus-within{border-color:var(--accent)}
+.aib-prompt{font-family:'JetBrains Mono',monospace;color:var(--accent);font-size:15px;user-select:none}
+#aiText{flex:1;background:transparent;border:0;outline:0;color:var(--text);font-size:14px;padding:8px 0;min-width:0}
+#aiText::placeholder{color:var(--text-dim)}
+#aiSend{flex:none;width:36px;height:36px;border-radius:50%;border:0;background:var(--accent);color:#0a0a0b;font-size:17px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:transform .15s,opacity .15s}
+#aiSend:hover{transform:scale(1.06)}
+#aiSend:disabled{opacity:.5;cursor:default}
+#aiPanel{position:absolute;bottom:calc(100% + 10px);left:0;right:0;background:rgba(19,19,26,.97);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid var(--border);border-radius:16px;overflow:hidden;box-shadow:0 30px 80px -20px rgba(0,0,0,.7);opacity:0;transform:translateY(8px) scale(.98);pointer-events:none;transition:opacity .25s,transform .25s}
+#aiBar.open #aiPanel{opacity:1;transform:none;pointer-events:auto}
+.aib-head{display:flex;align-items:center;gap:8px;padding:10px 14px;border-bottom:1px solid var(--border);background:var(--card)}
+.aib-dot{width:8px;height:8px;border-radius:50%;background:var(--accent);animation:aibPulse 2s infinite}
+@keyframes aibPulse{0%,100%{opacity:1}50%{opacity:.35}}
+.aib-title{font-family:'Space Grotesk',sans-serif;font-size:14px;color:var(--text)}
+.aib-sub{flex:1;font-family:'JetBrains Mono',monospace;font-size:10.5px;color:var(--text-dim)}
+#aiClose{border:0;background:transparent;color:var(--text-dim);font-size:18px;cursor:pointer;padding:2px 6px;border-radius:6px}
+#aiClose:hover{color:var(--text);background:rgba(255,255,255,.06)}
+#aiLog{max-height:min(52vh,420px);min-height:120px;overflow-y:auto;padding:14px;display:flex;flex-direction:column;gap:10px}
+.aib-msg{max-width:85%;padding:9px 12px;border-radius:12px;font-size:13.5px;line-height:1.55;white-space:pre-wrap;word-break:break-word}
+.aib-msg.bot{align-self:flex-start;background:var(--bg-elev);border:1px solid var(--border);color:var(--text);border-bottom-left-radius:4px}
+.aib-msg.me{align-self:flex-end;background:var(--accent);color:#0a0a0b;border-bottom-right-radius:4px}
+.aib-msg.off{border-style:dashed}
+.aib-msg .cv{display:block;margin-top:6px;font-family:'JetBrains Mono',monospace;font-size:10.5px;color:var(--text-dim)}
+.aib-msg .cv b{color:var(--text-muted);font-weight:600}
+.aib-msg a.src{display:inline-block;margin-top:6px;margin-right:10px;color:var(--accent);font-weight:600;text-decoration:underline;font-size:12.5px}
+.aib-typing{align-self:flex-start;display:flex;gap:5px;padding:12px 14px}
+.aib-typing i{width:6px;height:6px;border-radius:50%;background:var(--accent);animation:aibBounce 1s infinite}
+.aib-typing i:nth-child(2){animation-delay:.15s}
+.aib-typing i:nth-child(3){animation-delay:.3s}
+@keyframes aibBounce{0%,60%,100%{transform:translateY(0)}30%{transform:translateY(-5px)}}
+#aiChips{display:flex;flex-wrap:wrap;gap:6px;padding:0 14px 10px}
+#aiChips button{font-size:11.5px;padding:6px 10px;border-radius:999px;border:1px solid var(--border);background:rgba(17,17,20,.6);color:var(--text-muted);cursor:pointer;transition:border-color .15s,color .15s}
+#aiChips button:hover{border-color:var(--accent);color:var(--accent)}
+.aib-note{padding:8px 14px;border-top:1px solid var(--border);font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--text-dim);background:rgba(17,17,20,.5)}
+@media (max-width:640px){#aiBar{bottom:12px;width:calc(100vw - 20px)}#aiLog{max-height:46vh}}
+@media (prefers-reduced-motion:reduce){#aiPanel,#aiForm,#aiSend{transition:none}.aib-dot,.aib-typing i{animation:none}}
