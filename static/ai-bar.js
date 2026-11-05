@@ -246,7 +246,7 @@ function ask(q){
       ans=cleanAnswer(ans);
       history.push({role:'assistant',content:ans});
       var m=addMsg('bot',ans);
-      addSources(m,q,6);
+      if(!/does not cover|not covered|no information|don\u2019t have|don't have/i.test(ans))addSources(m,q,6);
       busy=false;sendBtn.disabled=false;text.focus();
     }).catch(function(err){
       clearTimeout(to);
